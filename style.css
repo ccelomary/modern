@@ -1,0 +1,263 @@
+* {
+    font-family: 'Crimson Pro', serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+
+.logo {
+    font-size: 14px;
+    border: 1px solid #fff;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 8px;
+    height: fit-content;
+    margin-left: 50px;
+    user-select: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #181719;
+}
+
+.navbar  {
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 50px;
+    user-select: none;
+    border-bottom: 2px solid #181719;
+    padding: 8px;
+}
+
+.navbar > li > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-size: 500;
+}
+
+.hum-menu {
+    display: none;
+    transition: all 0.5s;
+}
+
+.hum-menu > i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar > li a:hover {
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.left-side {
+    color : #fff;
+    box-sizing: border-box;
+    width: 45%;
+}
+.left-side h2 {
+    font-size: 45px;
+    margin-left: 50px;
+}
+.left-side p {
+    font-size: 24px;
+    margin-left: 50px;
+    width: 400px;
+}
+.left-side a {
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+.right-side {
+    position: relative;
+    margin-bottom: 150px;
+    width: 55%;
+}
+
+.right-side > img {
+    display: block;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile img {
+    display: block;
+    width:80px;
+    height:80px;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+
+.profile .name-profession  h2, .name-profession p{
+    margin : 0;
+}
+
+.profile .name-profession  h2 {
+    margin-top: 5px;
+}
+
+.profile .name-profession  p {
+    margin-top: 10px;
+    color: #828282;
+}
+
+.paragraph h2 {
+    font-size: 24px;
+}
+
+.card {
+    position: absolute;
+    padding: 18px;
+    top: 80%;
+    left: 15%;
+    width: 410px;
+    height: 186px;
+    background-color: #181719;
+    color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fa-long-arrow-alt-right {
+    position: relative;
+    top: 3px;
+    left: 7px;
+}
+
+
+footer {
+    text-align: center;
+    color: #fff;
+    padding:10px;
+}
+.bold {
+    font-weight: 700;
+}
+
+.navbar-overflow {
+    position: fixed;
+    overflow: hidden;
+}
+@media screen and (max-width:800px) {
+    .content {
+        display: block;
+        box-sizing: border-box;
+    }
+    .left-side {
+        width : 100%;
+        margin-bottom: 15px;
+    }
+    .left-side  h2, .left-side p, .left-side a {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 80%;
+        box-sizing: border-box;
+    }
+    .right-side {
+        width : 100%;
+        margin-bottom: 200px;
+    }
+
+    .right-side > img {
+        width: 100%;
+    }
+
+    .card {
+        top: 70%;
+        left: 5%;
+        width:310px;
+    }
+
+    header {
+        flex-direction: column;
+        background-color: #181719;
+    }
+
+    .header-click {
+        height: 100%;
+    }
+
+    .logo {
+        width: fit-content;
+    }
+    .hum-menu {
+        position: absolute;
+        top: 70px;
+        left: 80%;
+        display: block;
+        cursor: pointer;
+        z-index: 6;
+    }
+    .lines {
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        width: 20px;
+    }
+
+    .line2-click {
+        background-color: #181719;
+    }
+     .line1-click {
+        transform: rotate(-45deg);
+        transition: all 0.25s;
+        transform-origin: bottom right;
+    }
+    .line3-click {
+        transform: rotate(45deg);
+        transition: all 0.25s;
+        transform-origin: top right;
+
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        padding-left: 0;
+        box-sizing: border-box;
+        background-color: #181719;
+        position: absolute;
+        top: 0;
+        z-index: 4;
+        justify-content: center;
+    }
+
+    .hide {
+        display: none;
+    }
+    .navbar li {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 20px;
+    }
+}
